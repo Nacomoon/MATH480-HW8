@@ -1,0 +1,18 @@
+# HG changeset patch
+# User Gary Morales <genericgaze@gmail.com>
+# Date 1369890451 25200
+# Node ID 7592e6a8f7b596e352a09ffce2b053f9cbbd063a
+# Parent  4381a8e9f0c8d5d481433f3e670c8de9ddeadc4f
+messed with + for Set
+
+diff --git a/sage/sets/set.py b/sage/sets/set.py
+--- a/sage/sets/set.py
++++ b/sage/sets/set.py
+@@ -381,6 +381,7 @@
+             sage: Set(GF(8,'b')) + Set(GF(4,'a'))
+             {0, 1, b, b + 1, b^2, b^2 + 1, b^2 + b, b^2 + b + 1, a, a + 1, 1, 0}
+         """
++        print X
+         return self.union(X)
+ 
+     def __or__(self, X):
